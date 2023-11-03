@@ -1,11 +1,20 @@
 import { useState } from 'react'
+import { gsap } from "gsap"
+
+import Navbar from './components/navbar'
+import Footer from './components/footer'
+import { Outlet } from 'react-router'
+
+import "./index.scss"
 
 function App() {
 
   return (
-    <div className="App">
-      <p>BTUI App by Team ACICTS :))</p>
-    </div>
+    <>
+    <Navbar />
+    <Outlet />
+    <Footer />
+    </>
   )
 }
 

@@ -1,0 +1,52 @@
+#navbar {
+    // position: fixed;
+    width: 100%;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    color: #fff;
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        font-size: .85rem;
+        font-family: "Unbounded";
+
+        a {
+            transition: transform .2s;
+
+            &:hover {
+                // text-shadow: .1px .1px 0 #fff,
+                // .1px -.1px 0 #fff,
+                // -.1px .1px 0 #fff,
+                // -.1px -.1px 0 #fff;
+                font-weight: 500;
+                transform: scaleX(1.1);
+            }
+            &:active {
+                transform: scale(.98);
+            }
+        }
+    }
+
+    .nav-socials {
+        justify-content: flex-end;
+    }
+
+    .nav-brand {
+        font-size: 1.25rem;
+        transition: .2s;
+
+        &:hover {
+            // letter-spacing: 2px;
+            transform: scaleX(1.1);
+        }
+        &:active {
+            transform: scale(.98);
+            letter-spacing: initial;
+        }
+    }
+}
