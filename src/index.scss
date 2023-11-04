@@ -28,7 +28,10 @@ img {
 :root {
     // font-family: "Montserrat", sans-serif;
     font-family: "Unbounded", sans-serif;
-    background-color: #e12525;
+    // background-color: #e12525;
+    background: url("/src/assets/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* Global Classes */

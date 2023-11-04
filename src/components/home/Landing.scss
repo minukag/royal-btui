@@ -2,13 +2,15 @@
     min-height: 100vh;
     padding-top: 3.5rem;
     width: 100%;
-    // background-color: blue;
+    // background: url("/src/assets/background.jpg");
+    // background-size: cover;
     .hero {
         position: absolute;
         left: 50%;
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        margin-top: 2rem;
         // top: 50%;
         // transform: translateY(-50%);
 
@@ -16,6 +18,12 @@
             font-size: 8dvw;
             color: #fff;
             line-height: 120%;
+            transition: .4s transform;
+            cursor: default;
+
+            &:hover {
+                transform: skew(-2deg, -2deg);
+            }
         }
 
         .cta{
@@ -25,10 +33,12 @@
             border: 1px solid #ffffff60;
             background-color: #ffffff20;
             color: #fff;
+            gap: .5rem;
             transition: .2s;
 
             &:hover {
                 background-color: #ffffff40;
+                gap: 1rem;
                 // padding: 1rem 2.5rem;
             }
             &:active {

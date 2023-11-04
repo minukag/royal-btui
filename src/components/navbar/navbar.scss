@@ -2,10 +2,13 @@
     position: fixed;
     width: 100%;
     padding: 1rem;
+    z-index: 10;
 
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     color: #fff;
+
+    backdrop-filter: blur(4px);
 
     .nav-links {
         display: flex;
