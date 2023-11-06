@@ -1,6 +1,7 @@
 import Can from "./Can"
 import Landing from "./Landing"
 import SectionIntro from "./SectionIntro"
+import Products from "./products"
 
 export default function Home() {
     return (
@@ -8,6 +9,7 @@ export default function Home() {
             <Can />
             <Landing />
             <SectionIntro />
+            <Products />
         </>
     )
 }
