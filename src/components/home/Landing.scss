@@ -1,6 +1,7 @@
 #landing {
     min-height: 100vh;
-    padding-top: 3.5rem;
+    // padding-top: 3.5rem;
+    padding: 3.5rem 0;
     width: 100%;
     // background: url("/src/assets/background.jpg");
     // background-size: cover;
@@ -44,6 +45,62 @@
             &:active {
                 transform: scale(.95);
             }
+        }
+    }
+
+    background-image: url("/src/assets/splash-landing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .tagline {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 7rem);
+        flex-direction: column;
+        color: #fff;
+        cursor: default;
+
+        h1 {
+            font-size: 25dvh;
+            line-height: 100%;
+        }
+
+        &.tagline-before {
+            z-index: 4;
+        }
+
+        &.tagline-after {
+            z-index: 6;
+
+            :nth-child(2) {
+                color: transparent;
+                -webkit-text-stroke: 0.1px #fff;
+            }
+        }
+    }
+
+    .cta {
+        position: absolute;
+        right: 3.5rem;
+        bottom: 3.5rem;
+
+        padding: 1rem 2rem;
+        width: max-content;
+        border-radius: 1000px;
+        border: 1px solid #ffffff60;
+        background-color: #ffffff20;
+        color: #fff;
+        gap: .5rem;
+        transition: .2s;
+
+        &:hover {
+            background-color: #ffffff40;
+            gap: 1rem;
+            // padding: 1rem 2.5rem;
+        }
+        &:active {
+            transform: scale(.95);
         }
     }
 }
