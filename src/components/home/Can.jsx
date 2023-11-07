@@ -16,8 +16,8 @@ export default function Can() {
         <div id="can" className="flex-center" >
             <motion.img src={can} 
             style={{ 
-                scale: useTransform(scrollYProgress, [0, sectionHeight], [2.4, 1]),
-                marginTop: useTransform(scrollYProgress, [0, sectionHeight], ["40%", "20%"]),
+                scale: useTransform(scrollYProgress, [0, sectionHeight, sectionHeight *3, sectionHeight*4], [2.4, 1, 1, 0]),
+                marginTop: useTransform(scrollYProgress, [0, sectionHeight], ["40%", "18%"]),
                 opacity: useTransform(scrollYProgress, [sectionHeight * 3, sectionHeight * 4], [1, 0])
             }}
             />
