@@ -11,7 +11,7 @@ export default function Navbar() {
                 <NavLink href="/">CONTACT US</NavLink>
             </div>
             <div className="nav-brand">
-                <Link href="/" className="font-brand">FRUITDRINK</Link>
+                <Link href="/" className="font-brand">BERRIGO</Link>
             </div>
             <div className="nav-links nav-socials">
                 <Link href="/">YOUTUBE</Link>

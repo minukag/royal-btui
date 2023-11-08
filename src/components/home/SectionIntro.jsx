@@ -22,7 +22,7 @@ function SectionIntro() {
             >
                 <div className="heading">
                     <p>TASTE THE REAL FRUIT</p>
-                    <h2 className="font-brand">FRUITDRINK</h2>
+                    <h2 className="font-brand">BERRIGO</h2>
                 </div>
                 <div className="pros">
                     <div className="pro-point">

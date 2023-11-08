@@ -1,4 +1,4 @@
-import can from "/src/assets/can3.png"
+import can from "/src/assets/can-strawberry.png"
 import "./can.scss"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useEffect, useState } from "react"
