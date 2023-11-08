@@ -35,6 +35,26 @@ img {
     color: #1b0606;
 }
 
+
+::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+    background-color: #1b0606;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    background-color: #ffffff98;
+}
+
+
 ::selection {
     background-color: #fef0f0;
     color: #e43f3b;
