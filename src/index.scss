@@ -32,6 +32,12 @@ img {
     background: url("/src/assets/background.jpg");
     background-attachment: fixed;
     background-size: cover;
+    color: #1b0606;
+}
+
+::selection {
+    background-color: #fef0f0;
+    color: #e43f3b;
 }
 
 /* Global Classes */

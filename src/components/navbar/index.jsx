@@ -1,9 +1,20 @@
 import { Link, NavLink } from "react-router-dom";
+import { motion, useScroll, useTransform } from "framer-motion"
 import "./navbar.scss"
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+    const { scrollYProgress } = useScroll()
+    const [sectionHeight, setSectionHeight] = useState(0)
+    
+    useEffect(() => {
+        setSectionHeight(window.innerHeight / document.body.scrollHeight)
+    }, [])
+
     return (
-        <nav id="navbar">
+        <motion.nav id="navbar"
+            style={{color: useTransform(scrollYProgress, [sectionHeight*4.8, sectionHeight*4.85], ["#fff", "#000"])}}
+        >
             <div className="nav-links nav-navigation">
                 <NavLink href="/">HOME</NavLink>
                 <NavLink href="/">PRODUCTS</NavLink>
@@ -14,10 +25,10 @@ export default function Navbar() {
                 <Link href="/" className="font-brand">BERRIGO</Link>
             </div>
             <div className="nav-links nav-socials">
-                <Link href="/">YOUTUBE</Link>
-                <Link href="/">FACEBOOK</Link>
-                <Link href="/">INSTAGRAM</Link>
+                <Link href="https://www.youtube.com/@ACICTS">YOUTUBE</Link>
+                <Link href="/">TWITTER</Link>
+                <Link href="https://www.instagram.com/acicts.lk/">INSTAGRAM</Link>
             </div>
-        </nav>
+        </motion.nav>
     )
 }
